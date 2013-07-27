@@ -17,11 +17,7 @@ class PaperTrailManager::ChangesController < ApplicationController
       @versions = @versions.where(:item_id => params[:id])
     end
 
-    # Ensure pagination parameters have sensible values
-    @page = (v = params[:page].to_i; v == 0 ? nil : v)
-    @per_page = (v = params[:per_page].to_i; v == 0 ? PER_PAGE : v)
-
-    @versions = @versions.paginate(:page => @page, :per_page => @per_page)
+    @versions = @versions.page(params[:page]).per(params[:per_page])
 
     respond_to do |format|
       format.html # index.html.erb

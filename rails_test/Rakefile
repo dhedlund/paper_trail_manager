@@ -32,7 +32,7 @@ def setup_rails_app dir
         gem "rails", "=#{version}"
         gem "sqlite3-ruby", :require => "sqlite3"
         gem "rake"
-        gem "will_paginate", "~> 3.0.pre2"
+        gem "kaminari", "~> 0.14.1"
         gem "paper_trail_manager", :path => "#{File.expand_path(File.join(File.dirname(__FILE__), '..', '..', '..'))}"
         gem 'factory_girl_rails', '~> 1.7.0'
         gem 'rspec-rails', '~> 2.11.0'

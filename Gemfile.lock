@@ -41,6 +41,9 @@ GEM
       rdoc
     journey (1.0.4)
     json (1.7.4)
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -89,16 +92,15 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
-    will_paginate (3.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jeweler (~> 1.8.4)
+  kaminari (~> 0.14.1)
   paper_trail (~> 2.0)
   rails (~> 3.0)
   rake
   rdoc
   sqlite3-ruby
-  will_paginate (~> 3.0.pre2)
